@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skulio - KI Tools für Lehrkräfte">
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/background-mixer.css">
+    <script src="/static/js/main.js" defer></script>
+    <script src="/static/js/background-mixer.js" defer></script>
+</head>
+<body>
+    <div class="background-mixer" id="backgroundMixer"></div>
+    <div class="page-wrapper">
+        <header>
+            <nav>
+                <a href="/" class="logo-container">
+                    <img src="G:/Projects/Skulio_demo/static/css/images/logo/logo1.png" alt="Skulio Logo" class="logo-image">
+                </a>
+                <a href="/features">Tools</a>
+                <a href="/about">Mission</a>
+                <a href="/team">Team</a>
+                <a href="/contact">Kontakt</a>
+                <a href="/signup" class="btn">Jetzt kostenlos testen</a>
+            </nav>
+        </header>
+        {% block content %}{% endblock %}
+        <footer class="container">
+            <div class="footer-grid">
+                <div class="contact-info">
+                    <p>Severinstraße, 50676 Köln</p>
+                    <p>Email: skulio.offiziell@gmail.com</p>
+                    <p>Tel: +49 160 95038783</p>
+                </div>
+                <div class="footer-links">
+                    <p>&copy; 2024 Skulio. All Rights Reserved.</p>
+                    <a href="/impressum">Impressum</a>
+                    <a href="/datenschutz">Datenschutz</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
